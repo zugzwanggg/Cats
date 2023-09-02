@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(229, 224, 224);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ul li {
+  list-style: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+button {
+  display: block;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+span {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 70%;
+  padding: 1rem;
+  margin: 0 auto;
+  input {
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 0.3rem;
+    width: 100%;
+  }
+  .sex {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    button {
+      padding: 0.5rem 2rem;
+      border: 2px black solid;
+      border-radius: 0.3rem;
+      background: white;
+      &.active {
+        background: black;
+        color: white;
+      }
+    }
+  }
+  .breed {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    button {
+      padding: 0.5rem 2rem;
+      border: 2px black solid;
+      border-radius: 0.3rem;
+      background: white;
+      &.active {
+        background: black;
+        color: white;
+      }
+    }
+  }
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width:20rem;
+  border: 3px black solid;
+  padding: 1.5rem 2rem;
+  border-radius: 0.3rem;
+  img {
+    width: 15rem;
+    height: 15rem;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+  }
+  .card-info {
+    h3 {
+      font-weight: 800;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  gap: 1rem;
+}
+
+.pagination {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  button {
+    padding: 1rem;
+    border: 2px black solid;
+    border-radius: 0.3rem;
+    background: white;
+    &.active {
+      background: black;
+      color: white;
+    }
+  }
+}
